@@ -1,0 +1,15 @@
+{"time":"2024-10-01T22:03:06.645917868+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T22:03:06.645930354+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_220306-kxfqz69j/logs/debug-core.log"}
+{"time":"2024-10-01T22:03:06.672525719+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T22:03:06.678051822+08:00","level":"INFO","msg":"created new stream","id":"kxfqz69j"}
+{"time":"2024-10-01T22:03:06.678098077+08:00","level":"INFO","msg":"stream: started","id":"kxfqz69j"}
+{"time":"2024-10-01T22:03:06.678115193+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"kxfqz69j"}}
+{"time":"2024-10-01T22:03:06.678206103+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"kxfqz69j"}}
+{"time":"2024-10-01T22:03:06.678164489+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"kxfqz69j"}}
+{"time":"2024-10-01T22:03:07.564710408+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T22:03:07.567400201+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T22:03:43.92203139+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kxfqz69j/file_stream\": read tcp 127.0.0.1:43142->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T22:03:51.207753988+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kxfqz69j/file_stream\": read tcp 127.0.0.1:41632->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T22:04:13.908793294+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kxfqz69j/file_stream\": read tcp 127.0.0.1:56168->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T22:04:21.210254813+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kxfqz69j/file_stream\": read tcp 127.0.0.1:37426->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T22:06:35.955133956+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kxfqz69j/file_stream\": EOF"}

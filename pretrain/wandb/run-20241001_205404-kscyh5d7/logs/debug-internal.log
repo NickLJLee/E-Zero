@@ -1,0 +1,16 @@
+{"time":"2024-10-01T20:54:04.153700619+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T20:54:04.153731663+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_205404-kscyh5d7/logs/debug-core.log"}
+{"time":"2024-10-01T20:54:04.179664551+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T20:54:04.185623094+08:00","level":"INFO","msg":"created new stream","id":"kscyh5d7"}
+{"time":"2024-10-01T20:54:04.185648487+08:00","level":"INFO","msg":"stream: started","id":"kscyh5d7"}
+{"time":"2024-10-01T20:54:04.185658711+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"kscyh5d7"}}
+{"time":"2024-10-01T20:54:04.185672038+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"kscyh5d7"}}
+{"time":"2024-10-01T20:54:04.1856941+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"kscyh5d7"}}
+{"time":"2024-10-01T20:54:04.714968009+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T20:54:04.716739221+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T20:57:25.520549952+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kscyh5d7/file_stream\": read tcp 127.0.0.1:57712->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T20:58:25.524347414+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kscyh5d7/file_stream\": read tcp 127.0.0.1:43894->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T20:58:32.955041084+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/kscyh5d7/file_stream\": read tcp 127.0.0.1:43910->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T20:59:13.387897723+08:00","level":"INFO","msg":"stream: closing","id":"kscyh5d7"}
+{"time":"2024-10-01T20:59:13.387940564+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-01T20:59:13.389969256+08:00","level":"INFO","msg":"Stopped system monitor"}

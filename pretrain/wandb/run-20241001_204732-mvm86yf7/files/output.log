@@ -1,0 +1,2 @@
+/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_dataset.py:261: DtypeWarning: Columns (18,19,20,21,22) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.txt_path = pd.read_csv(txt_path)

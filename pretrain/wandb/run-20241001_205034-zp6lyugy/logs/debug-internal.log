@@ -1,0 +1,13 @@
+{"time":"2024-10-01T20:50:34.672302916+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T20:50:34.672315639+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_205034-zp6lyugy/logs/debug-core.log"}
+{"time":"2024-10-01T20:50:34.698291236+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T20:50:34.704139237+08:00","level":"INFO","msg":"created new stream","id":"zp6lyugy"}
+{"time":"2024-10-01T20:50:34.704231076+08:00","level":"INFO","msg":"stream: started","id":"zp6lyugy"}
+{"time":"2024-10-01T20:50:34.70419706+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"zp6lyugy"}}
+{"time":"2024-10-01T20:50:34.704261178+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"zp6lyugy"}}
+{"time":"2024-10-01T20:50:34.704232086+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"zp6lyugy"}}
+{"time":"2024-10-01T20:50:35.585091523+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T20:50:35.586599088+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T20:50:44.023468881+08:00","level":"INFO","msg":"stream: closing","id":"zp6lyugy"}
+{"time":"2024-10-01T20:50:44.023515103+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-01T20:50:44.030360317+08:00","level":"INFO","msg":"Stopped system monitor"}

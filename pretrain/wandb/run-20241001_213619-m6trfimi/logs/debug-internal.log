@@ -1,0 +1,18 @@
+{"time":"2024-10-01T21:36:19.912386552+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T21:36:19.91240586+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_213619-m6trfimi/logs/debug-core.log"}
+{"time":"2024-10-01T21:36:19.939075531+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T21:36:19.945877055+08:00","level":"INFO","msg":"created new stream","id":"m6trfimi"}
+{"time":"2024-10-01T21:36:19.945916382+08:00","level":"INFO","msg":"stream: started","id":"m6trfimi"}
+{"time":"2024-10-01T21:36:19.94592586+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"m6trfimi"}}
+{"time":"2024-10-01T21:36:19.945956689+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"m6trfimi"}}
+{"time":"2024-10-01T21:36:19.945930717+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"m6trfimi"}}
+{"time":"2024-10-01T21:36:20.43412875+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T21:36:20.43623252+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T21:40:09.504726132+08:00","level":"INFO","msg":"stream: closing","id":"m6trfimi"}
+{"time":"2024-10-01T21:40:09.504751013+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-01T21:40:09.507295424+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-01T21:40:13.25324959+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-01T21:40:13.711411342+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"m6trfimi"}}
+{"time":"2024-10-01T21:40:13.71148184+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"m6trfimi"}}
+{"time":"2024-10-01T21:40:13.711513192+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"m6trfimi"}}
+{"time":"2024-10-01T21:40:13.711666528+08:00","level":"INFO","msg":"stream: closed","id":"m6trfimi"}

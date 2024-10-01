@@ -1,0 +1,22 @@
+{"time":"2024-10-01T21:42:40.002402131+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T21:42:40.002417781+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_214239-ubpn6kym/logs/debug-core.log"}
+{"time":"2024-10-01T21:42:40.028297666+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T21:42:40.033693566+08:00","level":"INFO","msg":"created new stream","id":"ubpn6kym"}
+{"time":"2024-10-01T21:42:40.033739022+08:00","level":"INFO","msg":"stream: started","id":"ubpn6kym"}
+{"time":"2024-10-01T21:42:40.033778696+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ubpn6kym"}}
+{"time":"2024-10-01T21:42:40.033774538+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ubpn6kym"}}
+{"time":"2024-10-01T21:42:40.033755803+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ubpn6kym"}}
+{"time":"2024-10-01T21:42:40.638196225+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T21:42:40.640860348+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T21:44:01.520591674+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:57142->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:44:35.85133766+08:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream"}
+{"time":"2024-10-01T21:46:16.534542339+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:38256->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:48:01.518736646+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:47838->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:48:46.518300925+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:38818->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:51:16.532458388+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:33312->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:51:23.964821729+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:33314->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:52:46.513335983+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:55906->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:52:53.629342867+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:55918->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T21:57:17.95976077+08:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream"}
+{"time":"2024-10-01T22:00:31.514153285+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:41724->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T22:00:38.970957028+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/ubpn6kym/file_stream\": read tcp 127.0.0.1:36664->127.0.0.1:7890: read: connection reset by peer"}

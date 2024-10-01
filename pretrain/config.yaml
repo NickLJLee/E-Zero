@@ -19,14 +19,14 @@ dataset:
 # params for trainer
 trainer:
   batch_size: 128
-  val_batch_size: 512
+  val_batch_size: 128
   checkpoint_interval: 50
   max_epochs: 20
   num_workers: 8
 
 optimizer:
   params:
-    lr: 1.0e-3
+    lr: 1.0e-4
     weight_decay: 1.0e-8
 
 # params for zeroshot eval
@@ -65,4 +65,4 @@ zeroshot:
   #     split_path: 'chapman/chapman_val.csv'
 
 # your model name
-wandb_name: 'resnet-18_frozen_lm'
+wandb_name: 'lm_GPT2-ft-4'

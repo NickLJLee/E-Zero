@@ -1,0 +1,23 @@
+/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_dataset.py:261: DtypeWarning: Columns (18,19,20,21,22) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.txt_path = pd.read_csv(txt_path)
+/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_dataset.py:307: DtypeWarning: Columns (17,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.txt_path = pd.read_csv(txt_path)
+tokenizer.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.36M/1.36M [00:02<00:00, 636kB/s]
+/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Traceback (most recent call last):
+  File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 106, in <module>
+    ddp_main()
+  File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 78, in ddp_main
+    for param in list(model.lm_model.encoder.layer[layer_idx].parameters()):
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1729, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'GPT2Model' object has no attribute 'encoder'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 106, in <module>
+[rank0]:     ddp_main()
+[rank0]:   File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 78, in ddp_main
+[rank0]:     for param in list(model.lm_model.encoder.layer[layer_idx].parameters()):
+[rank0]:   File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1729, in __getattr__
+[rank0]:     raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+[rank0]: AttributeError: 'GPT2Model' object has no attribute 'encoder'

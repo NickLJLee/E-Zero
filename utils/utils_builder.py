@@ -11,6 +11,7 @@ from transformers import AutoModel, AutoTokenizer
 from resnet1d import ResNet18, ResNet34, ResNet50, ResNet101
 from vit1d import vit_base, vit_small, vit_tiny, vit_middle
 
+from transformers import GPT2Model, GPT2Tokenizer
 
 class AttentionPool2d(nn.Module):
     def __init__(self, spacial_dim: int, embed_dim: int, num_heads: int, output_dim: int = None):
@@ -40,7 +41,7 @@ class ECGCLIP(torch.nn.Module):
         self.proj_hidden = network_config['projection_head']['mlp_hidden_size']
         self.proj_out = network_config['projection_head']['projection_size']
     
-        # ecg signal encoder
+        # ECG信号编码器
         self.ecg_model = network_config['ecg_model']
         self.num_leads = network_config['num_leads']
     
@@ -103,24 +104,29 @@ class ECGCLIP(torch.nn.Module):
         self.dropout1 = nn.Dropout(p=0.1)
         self.dropout2 = nn.Dropout(p=0.1)
     
-        # text encoder
-        url = network_config['text_model']
-        self.lm_model = AutoModel.from_pretrained(
-            url, trust_remote_code=True, revision='main')
-        self.tokenizer = AutoTokenizer.from_pretrained(
-            url, trust_remote_code=True, revision='main')
+        # 文本编码器（GPT2）
+        self.lm_model = GPT2Model.from_pretrained('gpt2')
+        self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+        self.tokenizer.pad_token = self.tokenizer.eos_token  # 设置 pad_token 为 eos_token
         
-        # 冻结文本编码器的参数
-        # for param in self.lm_model.parameters():
-        #     param.requires_grad = False
-            
-        # text projector
+        # 文本投影层
         self.proj_t = nn.Sequential(
-            nn.Linear(768, self.proj_hidden),
+            nn.Linear(self.lm_model.config.hidden_size, self.proj_hidden),
             nn.GELU(),
             nn.Linear(self.proj_hidden, self.proj_out),
         )
-            
+        
+        # freezing GPT2
+        # freezing 12 layers
+        freeze_layers = 6
+        for layer_idx in range(freeze_layers):
+            for param in self.lm_model.h[layer_idx].parameters():
+                param.requires_grad = False
+
+        # all freezing
+        # for param in self.lm_model.parameters():
+        #     param.requires_grad = False
+    
     def _tokenize(self, text):
         tokenizer_output = self.tokenizer.batch_encode_plus(
             batch_text_or_text_pairs=text,
@@ -131,7 +137,7 @@ class ECGCLIP(torch.nn.Module):
             return_tensors='pt'
         )
         return tokenizer_output
-        
+
     @torch.no_grad()
     def ext_ecg_emb(self, ecg):
         if 'resnet' in self.ecg_model:
@@ -145,11 +151,18 @@ class ECGCLIP(torch.nn.Module):
             proj_ecg_emb = self.proj_e(ecg_emb)
     
         return proj_ecg_emb
-        
+    
     @torch.no_grad()
     def get_text_emb(self, input_ids, attention_mask):
-        text_emb = self.lm_model(input_ids=input_ids,
-                                 attention_mask=attention_mask).pooler_output
+        outputs = self.lm_model(input_ids=input_ids,
+                                attention_mask=attention_mask)
+        last_hidden_state = outputs.last_hidden_state  # [batch_size, seq_len, hidden_size]
+        
+        # 使用 attention_mask 进行平均池化
+        input_mask_expanded = attention_mask.unsqueeze(-1).expand(last_hidden_state.size()).float()
+        sum_embeddings = torch.sum(last_hidden_state * input_mask_expanded, dim=1)
+        sum_mask = input_mask_expanded.sum(dim=1)
+        text_emb = sum_embeddings / sum_mask
         return text_emb
         
     def forward(self, ecg, input_ids, attention_mask):
@@ -170,15 +183,14 @@ class ECGCLIP(torch.nn.Module):
             ecg_emb1 = self.dropout1(self.linear1(ecg_emb))
             ecg_emb2 = self.dropout2(self.linear2(ecg_emb))
     
-        proj_ecg_emb = normalize(proj_ecg_emb, dim=-1)
+        proj_ecg_emb = nn.functional.normalize(proj_ecg_emb, dim=-1)
     
-        # get text feature
-        # text feature extraction is independent of the type of ecg encoder
-        # with torch.no_grad():
-        #     text_emb = self.get_text_emb(input_ids, attention_mask)
-        text_emb = self.get_text_emb(input_ids, attention_mask)
+        # 获取文本特征
+        with torch.no_grad():
+            text_emb = self.get_text_emb(input_ids, attention_mask)
+        # text_emb = self.get_text_emb(input_ids, attention_mask)
         proj_text_emb = self.proj_t(text_emb.contiguous())
-        proj_text_emb = normalize(proj_text_emb, dim=-1)
+        proj_text_emb = nn.functional.normalize(proj_text_emb, dim=-1)
     
         if self.training:
             return {'ecg_emb': [ecg_emb1, ecg_emb2],
@@ -188,4 +200,3 @@ class ECGCLIP(torch.nn.Module):
             return {'ecg_emb': [ecg_emb1, ecg_emb2],
                     'proj_ecg_emb': [proj_ecg_emb],
                     'proj_text_emb': [proj_text_emb]}
-

@@ -1,0 +1,1 @@
+{"train_step_total_loss":6.237887382507324,"_runtime":301.000642183,"train_step_uma_loss":0.13337209820747375,"_step":936,"train_step_cma_loss":6.104515075683594,"train_step_acc5":56.640625,"_timestamp":1.727788122729597e+09,"train_step_acc1":28.906248092651367,"_wandb":{"runtime":307}}

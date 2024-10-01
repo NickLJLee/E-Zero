@@ -75,7 +75,7 @@ def ddp_main():
     '''
     if config['network']['free_layers'] is not None:
         for layer_idx in range(int(config['network']['free_layers'])):
-            for param in list(model.lm_model.encoder.layer[layer_idx].parameters()):
+            for param in list(model.lm_model.h[layer_idx].parameters()):
                 param.requires_grad = False
 
     model = model.to(device_id)
