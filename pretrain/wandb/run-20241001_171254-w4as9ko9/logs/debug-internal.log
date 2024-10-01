@@ -1,0 +1,15 @@
+{"time":"2024-10-01T17:12:54.043990781+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T17:12:54.044004553+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_171254-w4as9ko9/logs/debug-core.log"}
+{"time":"2024-10-01T17:12:54.071720952+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T17:12:54.074991157+08:00","level":"INFO","msg":"created new stream","id":"w4as9ko9"}
+{"time":"2024-10-01T17:12:54.075042887+08:00","level":"INFO","msg":"stream: started","id":"w4as9ko9"}
+{"time":"2024-10-01T17:12:54.075083586+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"w4as9ko9"}}
+{"time":"2024-10-01T17:12:54.075077515+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"w4as9ko9"}}
+{"time":"2024-10-01T17:12:54.075078585+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"w4as9ko9"}}
+{"time":"2024-10-01T17:12:54.558530287+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T17:12:54.560180598+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T17:23:34.645120939+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/MERL_ICML/w4as9ko9/file_stream\": EOF"}
+{"time":"2024-10-01T17:25:47.763111254+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/MERL_ICML/w4as9ko9/file_stream\": EOF"}
+{"time":"2024-10-01T17:28:02.932286121+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/MERL_ICML/w4as9ko9/file_stream\": EOF"}
+{"time":"2024-10-01T17:30:22.196978918+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/MERL_ICML/w4as9ko9/file_stream\": EOF"}
+{"time":"2024-10-01T17:32:51.700775006+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/MERL_ICML/w4as9ko9/file_stream\": EOF"}

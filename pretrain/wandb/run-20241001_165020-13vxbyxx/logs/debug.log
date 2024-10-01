@@ -1,0 +1,86 @@
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Current SDK version is 0.18.2
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Configure stats pid to 2403120
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Loading settings from /home/lijun/.config/wandb/settings
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Loading settings from /data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/settings
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': '/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py', 'program': '/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py'}
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_init.py:_log_setup():532] Logging user logs to /data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_165020-13vxbyxx/logs/debug.log
+2024-10-01 16:50:20,936 INFO    MainThread:2403120 [wandb_init.py:_log_setup():533] Logging internal logs to /data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_165020-13vxbyxx/logs/debug-internal.log
+2024-10-01 16:50:20,937 INFO    MainThread:2403120 [wandb_init.py:init():616] calling init triggers
+2024-10-01 16:50:20,937 INFO    MainThread:2403120 [wandb_init.py:init():623] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'total_epochs': 20, 'weight_decay': 1e-08, 'ecg_model': 'resnet18', 'text_model': 'ncbi/MedCPT-Query-Encoder', 'batch_size': 128, 'val_zeroshot': 'all_sets', 'prompt_type': 'CKEPE'}
+2024-10-01 16:50:20,937 INFO    MainThread:2403120 [wandb_init.py:init():666] starting backend
+2024-10-01 16:50:20,937 INFO    MainThread:2403120 [wandb_init.py:init():670] sending inform_init request
+2024-10-01 16:50:20,939 INFO    MainThread:2403120 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-01 16:50:20,940 INFO    MainThread:2403120 [wandb_init.py:init():683] backend started and connected
+2024-10-01 16:50:20,946 INFO    MainThread:2403120 [wandb_init.py:init():778] updated telemetry
+2024-10-01 16:50:20,947 INFO    MainThread:2403120 [wandb_init.py:init():811] communicating run to backend with 90.0 second timeout
+2024-10-01 16:51:19,399 INFO    Thread-1 (wrapped_target):2403120 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connectionpool.py", line 775, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1044, in _prepare_proxy
+    conn.connect()
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connection.py", line 652, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connection.py", line 805, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: _ssl.c:990: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connectionpool.py", line 777, in urlopen
+    self._raise_timeout(
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/urllib3/connectionpool.py", line 369, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 347, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lijun/anaconda3/envs/ecg/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+2024-10-01 16:51:29,557 INFO    MainThread:2403120 [wandb_init.py:init():862] starting run threads in backend
+2024-10-01 16:51:29,725 INFO    MainThread:2403120 [wandb_run.py:_console_start():2464] atexit reg
+2024-10-01 16:51:29,725 INFO    MainThread:2403120 [wandb_run.py:_redirect():2312] redirect: wrap_raw
+2024-10-01 16:51:29,725 INFO    MainThread:2403120 [wandb_run.py:_redirect():2377] Wrapping output streams.
+2024-10-01 16:51:29,725 INFO    MainThread:2403120 [wandb_run.py:_redirect():2402] Redirects installed.
+2024-10-01 16:51:29,727 INFO    MainThread:2403120 [wandb_init.py:init():906] run started, returning control to user process

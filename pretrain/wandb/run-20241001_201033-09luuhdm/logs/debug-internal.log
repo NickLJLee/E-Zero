@@ -1,0 +1,10 @@
+{"time":"2024-10-01T20:10:33.932623569+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T20:10:33.932655009+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_201033-09luuhdm/logs/debug-core.log"}
+{"time":"2024-10-01T20:10:33.960746907+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T20:10:33.967656975+08:00","level":"INFO","msg":"created new stream","id":"09luuhdm"}
+{"time":"2024-10-01T20:10:33.967691864+08:00","level":"INFO","msg":"stream: started","id":"09luuhdm"}
+{"time":"2024-10-01T20:10:33.967728+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"09luuhdm"}}
+{"time":"2024-10-01T20:10:33.967711317+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"09luuhdm"}}
+{"time":"2024-10-01T20:10:33.967740313+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"09luuhdm"}}
+{"time":"2024-10-01T20:10:34.479580888+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T20:10:34.480808719+08:00","level":"INFO","msg":"Starting system monitor"}

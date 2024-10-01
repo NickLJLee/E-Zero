@@ -1,0 +1,31 @@
+/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_dataset.py:261: DtypeWarning: Columns (17,18,19,20,21) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.txt_path = pd.read_csv(txt_path)
+/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_dataset.py:306: DtypeWarning: Columns (16,17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.txt_path = pd.read_csv(txt_path)
+create directory "../checkpoints/" for save checkpoint!
+---------------------------
+#########################################
+Be patient..., checking checkpoint now...
+Start training from 0 epoch
+#########################################
+training start!
+/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_trainer.py:91: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+  0%|                                                                                                                                                                                                                                                                                                                                          | 0/1406 [00:01<?, ?it/s]
+  0%|                                                                                                                                                                                                                                                                                                                                            | 0/21 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 106, in <module>
+    ddp_main()
+  File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 103, in ddp_main
+    trainer.train_w_TextEmb(train_dataset, val_dataset, config['zeroshot'])
+  File "/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_trainer.py", line 109, in train_w_TextEmb
+    report = data['raw_text']
+KeyError: 'raw_text'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 106, in <module>
+[rank0]:     ddp_main()
+[rank0]:   File "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py", line 103, in ddp_main
+[rank0]:     trainer.train_w_TextEmb(train_dataset, val_dataset, config['zeroshot'])
+[rank0]:   File "/data1/1shared/lijun/ecg/E-Zero/pretrain/../utils/utils_trainer.py", line 109, in train_w_TextEmb
+[rank0]:     report = data['raw_text']
+[rank0]: KeyError: 'raw_text'

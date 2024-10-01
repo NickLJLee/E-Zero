@@ -1,0 +1,17 @@
+{"time":"2024-10-01T17:54:58.91237452+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T17:54:58.912408464+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_175458-5ocfr3wj/logs/debug-core.log"}
+{"time":"2024-10-01T17:54:58.941019317+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T17:54:58.948172967+08:00","level":"INFO","msg":"created new stream","id":"5ocfr3wj"}
+{"time":"2024-10-01T17:54:58.948214691+08:00","level":"INFO","msg":"stream: started","id":"5ocfr3wj"}
+{"time":"2024-10-01T17:54:58.948223832+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"5ocfr3wj"}}
+{"time":"2024-10-01T17:54:58.948249593+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"5ocfr3wj"}}
+{"time":"2024-10-01T17:54:58.948243687+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"5ocfr3wj"}}
+{"time":"2024-10-01T17:54:59.602842939+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-01T17:54:59.604392739+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-01T17:56:20.646429762+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/5ocfr3wj/file_stream\": read tcp 127.0.0.1:38762->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T17:56:27.759541813+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/5ocfr3wj/file_stream\": read tcp 127.0.0.1:42044->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T17:56:50.659026937+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/5ocfr3wj/file_stream\": read tcp 127.0.0.1:43320->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T17:57:50.635281611+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/5ocfr3wj/file_stream\": read tcp 127.0.0.1:54002->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T17:57:57.751537659+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/nickljlee/E-Zero/5ocfr3wj/file_stream\": read tcp 127.0.0.1:58214->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2024-10-01T19:05:00.100443375+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-01T19:26:14.673320855+08:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/nickljlee/E-Zero/5ocfr3wj/file_stream"}

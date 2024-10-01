@@ -1,0 +1,17 @@
+{"time":"2024-10-01T16:47:28.575154524+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-01T16:47:28.575186317+08:00","level":"INFO","msg":"created symlink","path":"/data1/1shared/lijun/ecg/E-Zero/pretrain/wandb/run-20241001_164728-hyv0enr2/logs/debug-core.log"}
+{"time":"2024-10-01T16:47:28.602148995+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-01T16:47:28.607096745+08:00","level":"INFO","msg":"created new stream","id":"hyv0enr2"}
+{"time":"2024-10-01T16:47:28.607136448+08:00","level":"INFO","msg":"stream: started","id":"hyv0enr2"}
+{"time":"2024-10-01T16:47:28.607162744+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hyv0enr2"}}
+{"time":"2024-10-01T16:47:28.607161099+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hyv0enr2"}}
+{"time":"2024-10-01T16:47:28.607180989+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"hyv0enr2"}}
+{"time":"2024-10-01T16:47:58.60854705+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-01T16:48:31.042768327+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-01T16:49:00.626080736+08:00","level":"INFO","msg":"stream: closing","id":"hyv0enr2"}
+{"time":"2024-10-01T16:49:00.626239467+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2024-10-01T16:49:00.626301697+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"hyv0enr2"}}
+{"time":"2024-10-01T16:49:00.626318634+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"hyv0enr2"}}
+{"time":"2024-10-01T16:49:00.626388964+08:00","level":"ERROR","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"Defer":{}}}},"control":{"always_send":true}}}}
+{"time":"2024-10-01T16:49:00.627253953+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"hyv0enr2"}}
+{"time":"2024-10-01T16:49:00.627271497+08:00","level":"INFO","msg":"stream: closed","id":"hyv0enr2"}

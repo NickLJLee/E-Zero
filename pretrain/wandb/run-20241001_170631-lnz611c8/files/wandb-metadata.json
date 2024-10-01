@@ -1,0 +1,73 @@
+{
+  "os":  "Linux-5.15.0-113-generic-x86_64-with-glibc2.35",
+  "python":  "3.10.14",
+  "startedAt":  "2024-10-01T09:06:31.341103Z",
+  "program":  "/data1/1shared/lijun/ecg/E-Zero/pretrain/main.py",
+  "codePath":  "main.py",
+  "email":  "540452385@qq.com",
+  "root":  "/data1/1shared/lijun/ecg/E-Zero/pretrain",
+  "host":  "cell",
+  "username":  "lijun",
+  "executable":  "/home/lijun/anaconda3/envs/ecg/bin/python",
+  "codePathLocal":  "main.py",
+  "cpu_count":  32,
+  "cpu_count_logical":  64,
+  "gpu":  "[, , , , , , , ]",
+  "gpu_count":  8,
+  "disk":  {
+    "/":  {
+      "total":  "941324374016",
+      "used":  "434706939904"
+    }
+  },
+  "memory":  {
+    "total":  "811249197056"
+  },
+  "cpu":  {
+    "count":  32,
+    "countLogical":  64
+  },
+  "gpu_nvidia":  [
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}
